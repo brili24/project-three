@@ -7,7 +7,7 @@ video {
 }
 
 body {
-  background-image: url("geometric background.jpg");
+  background-image: url("../images/geometric-background.jpg");
 }
 
 /* Header */
@@ -16,11 +16,12 @@ body {
 }
 h1 {
   font-size: 3em;
-  color: #4b78ff;
+  color: #000d33;
 }
+
 /* Text */
 a {
-  color: #4b78ff;
+  color: #000d33;
 }
 
 /* Sources */
@@ -43,6 +44,16 @@ ul {
 .btn:hover {
   background-color: #7a9bff;
 }
+#previous {
+  display: flex;
+  float: left;
+  margin: 1em;
+}
+#next {
+  display: flex;
+  float: right;
+  margin: 1em;
+}
 
 /* Slideshow */
 .slideshow {
@@ -56,6 +67,7 @@ ul {
   width: 100%;
   height: 100%;
   opacity: 0;
+  /* display: none; */
   transition: opacity 300ms;
 }
 .slideshow div[id^="slide"]::before {
@@ -77,6 +89,8 @@ ul {
 }
 .slideshow div[id^="slide"].active {
   opacity: 1;
+  /* display: block; */
+  z-index: 1;
 }
 
 /* Flip Card */
@@ -84,7 +98,6 @@ ul {
   background-color: transparent;
   width: 300px;
   height: 300px;
-  border: 1px solid #f1f1f1;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
 .flip-card-inner {
@@ -129,6 +142,11 @@ ul {
   }
   p {
     font-size: 0.8em;
+  }
+  .slideshow {
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
   }
 }
 

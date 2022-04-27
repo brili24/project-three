@@ -1,3 +1,4 @@
+// Previous and Next Button
 var active = 0;
 var previousButton = document.querySelector("#previous");
 var nextButton = document.querySelector("#next");
@@ -34,6 +35,7 @@ setUp();
 previousButton.addEventListener("click", previousSlide);
 nextButton.addEventListener("click", nextSlide);
 
+// Toggle Image
 document.querySelector(".images").addEventListener("click", function () {
   this.classList.toggle("active");
 });

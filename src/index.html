@@ -17,8 +17,12 @@
     <div class="header">
       <h1 id="title">Sudoku!</h1>
     </div>
-    <button class="btn" id="previous"><i class="fas fa-angle-left"></i></button>
-    <button class="btn" id="next"><i class="fas fa-angle-right"></i></button>
+    <button class="btn" id="previous">
+      <i class="fas fa-angle-left" style="font-size: 48px"></i>
+    </button>
+    <button class="btn" id="next">
+      <i class="fas fa-angle-right" style="font-size: 48px"></i>
+    </button>
     <div class="slideshow">
       <!-- First Slide -->
       <div class="active" id="slide1">
@@ -29,7 +33,7 @@
           that compose the grid contain all of the digits from 1 to 9.
         </h2>
         <br />
-        <h2>How to Play</h2>
+        <h1>How to Play</h1>
         <h3>
           Rule 1 - Each row must contain the numbers from 1 to 9, without
           repetitions
@@ -41,6 +45,7 @@
           with allocated numbers on the grid. The player should use these
           numbers as clues to find which digits are missing in each row.
         </p>
+        <br />
         <div class="images">
           <img
             src="./images/row-unsolved.PNG"
@@ -69,16 +74,17 @@
           allocated at the beginning of the puzzle work as clues to find which
           digits are missing in each column and their position.
         </p>
+        <br />
         <div class="images">
           <img
             src="./images/column-unsolved.PNG"
-            alt="Unsolved Row"
+            alt="Unsolved Column"
             style="width: 50px; height: 50vh"
             class="before"
           />
           <img
             src="./images/column-unsolved.PNG"
-            alt="Solved Row"
+            alt="Solved Column"
             style="width: 50px; height: 50vh"
             class="after"
           />
@@ -94,6 +100,7 @@
           and columns without duplicated digits finds inside each block another
           restriction to the numbers’ positioning.
         </p>
+        <br />
         <div class="images">
           <img
             src="./images/nonet-unsolved.PNG"
@@ -119,8 +126,19 @@
           or if there are any duplicates, the player can simply count or flex
           their math skills and sum the numbers. When the digits occur only
           once, the total of each row, column and group must be of 45.
-          1+2+3+4+5+6+7+8+9=45
+          <strong>1+2+3+4+5+6+7+8+9=45</strong>
         </p>
+        <div class="container">
+          <video
+            id="animation"
+            style="width: 640px; height: 360px"
+            controls
+            autoplay
+            loop
+          >
+            <source src="./images/Nonet-Animation.mp4" type="video/mp4" />
+          </video>
+        </div>
       </div>
       <!-- Fifth Slide -->
       <div id="slide5">
@@ -162,6 +180,13 @@
           beginning of the game are the only clues the player needs to solve the
           grid.
         </p>
+        <br />
+        <img
+          src="./images/guessing.PNG"
+          alt="Wrong Guess"
+          style="width: 50vw; height: 50px"
+          class="before"
+        />
       </div>
       <!-- Seventh Slide -->
       <div id="slide7">
@@ -174,6 +199,25 @@
           essential to be able to apply the advanced solving techniques required
           to complete the grid.
         </p>
+        <br />
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img
+                src="./images/notes-unsolved.png"
+                alt="Hidden Single"
+                style="width: 300px; height: 300px"
+              />
+            </div>
+            <div class="flip-card-back">
+              <img
+                src="./images/notes-solved.png"
+                alt="Hidden Single Reveals '1'"
+                style="width: 300px; height: 300px"
+              />
+            </div>
+          </div>
+        </div>
         <!-- Sources Modal -->
         <button id="sources">Sources</button>
         <div class="modal">

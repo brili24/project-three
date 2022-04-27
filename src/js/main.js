@@ -37,9 +37,3 @@ nextButton.addEventListener("click", nextSlide);
 var current = 0;
 var beforeImage = document.querySelector(".before");
 var afterImage = document.querySelector(".after");
-var images = document.querySelectorAll(".images > img");
-
-function toggleImage(from, to) {
-  images[from].classList.remove("current");
-  images[to].classList.add("current");
-}

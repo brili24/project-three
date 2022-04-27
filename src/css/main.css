@@ -40,7 +40,7 @@ a {
 /* Sources Modal */
 #sources {
   position: absolute;
-  top: 80;
+  bottom: 0;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -67,7 +67,7 @@ ul {
 }
 .modal-content {
   background-color: #abd3fa;
-  margin: 10% auto;
+  margin: 15% auto;
   padding: 20px;
   border: 1px solid #000d33;
   width: 50%;

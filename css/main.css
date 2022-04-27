@@ -105,6 +105,24 @@ ul {
   z-index: 1;
 }
 
+/* Toggle Card */
+img {
+  width: 100%;
+}
+.images {
+  position: relative;
+}
+.images img {
+  position: absolute;
+}
+.after {
+  opacity: 0;
+  transition: opacity 300ms;
+}
+.images.active .after {
+  opacity: 1;
+}
+
 /* Flip Card */
 .flip-card {
   background-color: transparent;

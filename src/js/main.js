@@ -34,6 +34,6 @@ setUp();
 previousButton.addEventListener("click", previousSlide);
 nextButton.addEventListener("click", nextSlide);
 
-var current = 0;
-var beforeImage = document.querySelector(".before");
-var afterImage = document.querySelector(".after");
+document.querySelector(".images").addEventListener("click", function () {
+  this.classList.toggle("active");
+});

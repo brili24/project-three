@@ -9,6 +9,7 @@ video {
 body {
   background-image: url("../images/geometric-background.jpeg");
   /* background: cover; */
+  font-family: "Raleway", sans-serif;
 }
 
 /* Header */
@@ -18,6 +19,7 @@ body {
 h1 {
   font-size: 3em;
   color: #000d33;
+  font-family: "Playfair Display", serif;
 }
 
 /* Text */
@@ -151,6 +153,13 @@ ul {
 /* Toggle Image */
 .images {
   position: relative;
+  /* margin: auto;
+  width: 50%;
+  padding: 10px; */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 .images img {
   position: absolute;

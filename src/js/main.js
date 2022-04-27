@@ -46,8 +46,10 @@ previousButton.addEventListener("click", previousSlide);
 nextButton.addEventListener("click", nextSlide);
 
 // Toggle Image
-document.querySelector(".images").addEventListener("click", function () {
-  this.classList.toggle("active");
+document.querySelectorAll(".images").forEach((i) => {
+  i.addEventListener("click", function () {
+    this.classList.toggle("active");
+  });
 });
 
 // Sources Modal

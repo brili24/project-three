@@ -32,22 +32,24 @@ a {
   display: flex;
   justify-content: center;
 }
+.animation {
+  margin-top: -5px;
+  /* margin-left: -100px; */
+}
 .video {
-  width: 349px;
   overflow: hidden;
   display: block;
-  height: 350px;
-}
-#animation {
-  margin-top: -5px;
-  margin-left: -145px;
+  width: 100%;
+  max-width: 500px;
+  max-height: 500px;
 }
 
 /* Sources Modal */
 #sources {
   position: absolute;
-  bottom: 0;
+  /* bottom: 0; */
   left: 50%;
+  margin-top: 5em;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   background-color: #5daaf8;
@@ -166,6 +168,10 @@ ul {
   width: 50%;
 }
 .images img {
+  width: 100%;
+  inset: 0;
+  margin: 0;
+  height: auto;
   position: absolute;
   z-index: 1;
 }
@@ -179,6 +185,34 @@ ul {
 .images.active .after {
   opacity: 1;
   z-index: 1;
+}
+.caption {
+  text-align: center;
+  margin-top: 1em;
+}
+.row {
+  aspect-ratio: 10 / 1;
+}
+.column {
+  max-width: 40px;
+  max-height: 300px;
+  display: block;
+}
+.nonet {
+  max-width: 300px;
+  max-height: 300px;
+}
+.guess {
+  max-height: 75px;
+}
+.wrong {
+  margin-top: 4.5em;
+}
+.column-solved {
+  margin-top: 18em;
+}
+.nonet-solved {
+  margin-top: 16em;
 }
 
 /* Flip Card */
@@ -229,6 +263,19 @@ ul {
   }
   h3 {
     font-size: 1.25em;
+  }
+  .guess {
+    max-height: 15px;
+    max-width: 100%;
+  }
+  .wrong {
+    margin-top: 2em;
+  }
+  .column-solved {
+    margin-top: 16em;
+  }
+  .nonet-solved {
+    margin-top: 10em;
   }
 }
 

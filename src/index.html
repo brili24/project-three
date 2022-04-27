@@ -52,23 +52,15 @@
           numbers as clues to find which digits are missing in each row.
         </p>
         <br />
-        <div class="images">
+        <div class="images row">
           <img
             src="./images/row-unsolved.PNG"
             alt="Unsolved Row"
-            style="width: 500px; height: 50px"
             class="before"
           />
-          <img
-            src="./images/row-solved.PNG"
-            alt="Solved Row"
-            style="width: 500px; height: 50px"
-            class="after"
-          />
+          <img src="./images/row-solved.PNG" alt="Solved Row" class="after" />
         </div>
-        <h3 style="text-align: center; margin-top: 3em">
-          Click to see the solution!
-        </h3>
+        <h3 class="caption">Click to see a solved row!</h3>
       </div>
       <!-- Second Slide -->
       <div id="slide2">
@@ -84,20 +76,19 @@
           digits are missing in each column and their position.
         </p>
         <br />
-        <div class="images">
+        <div class="images column">
           <img
             src="./images/column-unsolved.PNG"
             alt="Unsolved Column"
-            style="width: 50px; height: 400px"
             class="before"
           />
           <img
             src="./images/column-solved.PNG"
             alt="Solved Column"
-            style="width: 50px; height: 400px"
             class="after"
           />
         </div>
+        <h3 class="caption column-solved">Click to see a solved column!</h3>
       </div>
       <!-- Third Slide -->
       <div id="slide3">
@@ -110,20 +101,15 @@
           restriction to the numbers’ positioning.
         </p>
         <br />
-        <div class="images">
+        <div class="images nonet">
           <img
             src="./images/nonet-unsolved.PNG"
             alt="Unsolved Nonet"
-            style="width: 300px; height: 300px"
             class="before"
           />
-          <img
-            src="./images/nonet.PNG"
-            alt="Solved Nonet"
-            style="width: 300px; height: 300px"
-            class="after"
-          />
+          <img src="./images/nonet.PNG" alt="Solved Nonet" class="after" />
         </div>
+        <h3 class="caption nonet-solved">Click to see a solved nonet!</h3>
       </div>
       <!-- Fourth Slide -->
       <div id="slide4">
@@ -140,13 +126,7 @@
         <br />
         <div class="container">
           <div class="video">
-            <video
-              id="animation"
-              style="width: 640px; height: 360px"
-              controls
-              autoplay
-              loop
-            >
+            <video class="animation" controls autoplay loop>
               <source src="./images/Nonet-Animation.mp4" type="video/mp4" />
             </video>
           </div>
@@ -165,24 +145,26 @@
         </p>
         <br />
         <!-- Flip Card -->
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img
-                src="./images/unsolved.png"
-                alt="Unsolved Puzzle"
-                style="width: 300px; height: 300px"
-              />
+        <div class="container">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img
+                  src="./images/unsolved.png"
+                  alt="Unsolved Puzzle"
+                  style="width: 100%; max-width: 300px; height: 300px"
+                />
+              </div>
+              <div class="flip-card-back">
+                <img
+                  src="./images/solved.png"
+                  alt="Solved Puzzle"
+                  style="width: 100%; max-width: 300px; height: 300px"
+                />
+              </div>
             </div>
-            <div class="flip-card-back">
-              <img
-                src="./images/solved.png"
-                alt="Solved Puzzle"
-                style="width: 300px; height: 300px"
-              />
-            </div>
+            <h3>Hover over to see the solution!</h3>
           </div>
-          <h3>Hover over to see the solution!</h3>
         </div>
       </div>
       <!-- Sixth Slide -->
@@ -195,14 +177,13 @@
           grid.
         </p>
         <br />
-        <div class="images">
-          <img
-            src="./images/guessing.PNG"
-            alt="Wrong Guess"
-            style="width: 500px; height: 50px"
-            class="before"
-          />
+        <div class="container guess">
+          <img src="./images/guessing.PNG" alt="Wrong Guess" class="before" />
         </div>
+        <h3 class="caption wrong">
+          Here a wrong guess is shown in red. The number '4' cannot be used
+          twice in one row.
+        </h3>
       </div>
       <!-- Seventh Slide -->
       <div id="slide7">
@@ -216,24 +197,26 @@
           to complete the grid.
         </p>
         <br />
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img
-                src="./images/notes-unsolved.png"
-                alt="Hidden Single"
-                style="width: 300px; height: 300px"
-              />
+        <div class="container">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img
+                  src="./images/notes-unsolved.png"
+                  alt="Hidden Single"
+                  style="width: 100%; max-width: 300px; height: 300px"
+                />
+              </div>
+              <div class="flip-card-back">
+                <img
+                  src="./images/notes-solved.png"
+                  alt="Hidden Single Reveals '1'"
+                  style="width: 100%; max-width: 300px; height: 300px"
+                />
+              </div>
             </div>
-            <div class="flip-card-back">
-              <img
-                src="./images/notes-solved.png"
-                alt="Hidden Single Reveals '1'"
-                style="width: 300px; height: 300px"
-              />
-            </div>
+            <h3>Hover over to see a hidden single!</h3>
           </div>
-          <h3>Hover over to see a hidden single!</h3>
         </div>
         <br />
         <!-- Sources Modal -->

@@ -39,3 +39,20 @@ nextButton.addEventListener("click", nextSlide);
 document.querySelector(".images").addEventListener("click", function () {
   this.classList.toggle("active");
 });
+
+// Sources Modal
+var modal = document.querySelector(".modal");
+var sourcesButton = document.querySelector("#sources");
+var span = document.getElementsByClassName("close")[0];
+
+sourcesButton.onclick = function () {
+  modal.style.display = "block";
+};
+span.onclick = function () {
+  modal.style.display = "none";
+};
+window.onclick = function (e) {
+  if (e.target == modal) {
+    modal.style.display = "none";
+  }
+};

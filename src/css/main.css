@@ -8,7 +8,7 @@ video {
 
 body {
   background-image: url("../images/geometric-background.jpeg");
-  /* background: cover; */
+  background: cover;
   font-family: "Raleway", sans-serif;
 }
 
@@ -29,6 +29,10 @@ a {
 
 /* Video */
 .container {
+  display: flex;
+  justify-content: center;
+}
+.video {
   width: 349px;
   overflow: hidden;
   display: block;

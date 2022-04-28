@@ -31,15 +31,6 @@ function nextSlide() {
   }
   toggleSlide(from, active);
 }
-// $(document).keydown(function keyToggle(e) {
-//   var from = active;
-//   if (e.keyCode == 37) {
-//     active = slideshow.length - 1;
-//   } else if (e.keyCode == 39) {
-//     active--;
-//   }
-//   toggleSlide(from, active);
-// });
 
 setUp();
 previousButton.addEventListener("click", previousSlide);

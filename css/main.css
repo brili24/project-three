@@ -270,8 +270,12 @@ ul {
   h3 {
     font-size: 1.25em;
   }
+  .row {
+    max-height: 20px;
+    max-width: 100%;
+  }
   .guess {
-    max-height: 15px;
+    max-height: 20px;
     max-width: 100%;
   }
   .wrong {
@@ -282,6 +286,9 @@ ul {
   }
   .nonet-solved {
     margin-top: 10em;
+  }
+  .subheading {
+    font-size: 2em;
   }
 }
 
